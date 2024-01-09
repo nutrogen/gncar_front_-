@@ -1,0 +1,182 @@
+.nes_list_search_box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2.4rem;
+
+  & > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.6rem;
+
+    p {
+      font-weight: 500;
+      margin-right: 0.6rem;
+    }
+
+    // &.search_date {
+    //   .inp_date {
+    //     width: 200px;
+    //   }
+    // }
+
+    // &.search_word {
+    //   .input_search {
+    //     width: 500px;
+    //   }
+    //   button {
+    //     width: 64px;
+    //   }
+    // }
+  }
+}
+
+/*반응형*/
+@media all and (min-width: 1381px) {
+  .inp_date {
+    width: 200px;
+  }
+  .search_word .input_search {
+    width: 500px !important;
+  }
+  .search_word button {
+    width: 64px !important;
+  }
+}
+
+@media all and (min-width: 870px) and (max-width: 1380px) {
+  .inp_date {
+    width: 100px;
+  }
+  .search_word .input_search {
+    width: 200px;
+  }
+  .search_word button {
+    width: 64px !important;
+  }
+}
+
+@media all and (max-width: 869px) {
+  .inp_date {
+    width: 100px;
+  }
+  .nes_list_search_box {
+    width: 100%;
+    display: inline-block;
+    z-index: 1;
+  }
+  .search_date {
+    width: 100%;
+    display: inline-block;
+  }
+  .search_date p {
+    padding-right: 13px;
+    display: inline-block;
+  }
+  .search_word {
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .search_word .input_search {
+    width: 200px;
+  }
+  .search_word button {
+    width: 64px !important;
+  }
+}
+@media all and (max-width: 480px) {
+  .inp_date {
+    width: 100%;
+  }
+  .search_date {
+    display: inline-block !important;
+  }
+  .search_date p {
+    width: 100%;
+    display: inline-block;
+  }
+  .search_word {
+    flex-direction: column;
+  }
+  .search_word p {
+    width: 100%;
+    display: block;
+  }
+  .search_word .input_search {
+    width: 100%;
+    display: block;
+  }
+  .search_word button {
+    width: 100% !important;
+    display: block;
+  }
+}
+
+.mg_t10 {
+  margin-top: 10px;
+}
+@media all and (min-width: 481px) {
+  .pc_none {
+    display: none !important;
+  }
+}
+@media all and (max-width: 480px) {
+  .mo_none {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 743px) {
+  .nes_list_search_box {
+    gap: 0;
+    flex-direction: column;
+  }
+  .nes_list_search_box p,
+  .nes_list_search_box input,
+  .nes_list_search_box button {
+    font-size: var(--fs-14);
+  }
+  .page_wrap table tr td:nth-of-type(1) {
+    display: none;
+  }
+  .page_wrap table tr {
+    position: relative;
+    padding: 10px 0 10px 0;
+  }
+  .page_wrap table tr td a {
+    display: inline;
+  }
+  .page_wrap table tr td {
+    color: var(--gray-500);
+    font-size: var(--fs-14);
+  }
+  .page_wrap table tr td:nth-of-type(2) {
+    color: var(--gray-700) !important;
+    font-weight: 500;
+    font-size: var(--fs-15);
+    padding-bottom: 5px;
+    line-height: 130%;
+  }
+  .page_wrap table tr td:nth-of-type(2)::before {
+    content: "제목 : ";
+  }
+  .page_wrap table tr td:nth-of-type(3)::before {
+    content: "등록일 : ";
+  }
+  .page_wrap table tr td:nth-of-type(4)::before {
+    content: "첨부파일 : ";
+  }
+
+  .table_chip_wrap {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 50%;
+    justify-content: left;
+  }
+  .table_chip_wrap > span {
+    width: 85px;
+  }
+}
