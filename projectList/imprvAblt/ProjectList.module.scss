@@ -1,0 +1,34 @@
+.project_list_search_box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2.4rem;
+  
+    & > div {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.6rem;
+  
+      p {
+        font-weight: 500;
+        margin-right: 0.6rem;
+      }
+  
+      &.search_date {
+        .inp_date {
+          width: 200px;
+        }
+      }
+  
+      &.search_word {
+        .input_search {
+          width: 500px;
+        }
+        button {
+          width: 64px;
+        }
+      }
+    }
+  }
+  

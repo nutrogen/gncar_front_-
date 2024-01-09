@@ -1,0 +1,215 @@
+@charset "UTF-8";
+.project_list_search_box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2.4rem;
+}
+.project_list_search_box > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.6rem;
+}
+.project_list_search_box > div p {
+  font-weight: 500;
+  margin-right: 0.6rem;
+}
+
+/*반응형*/
+@media all and (min-width: 1620px) {
+  .inp_date {
+    width: 200px;
+  }
+  .search_word .input_search {
+    width: 500px !important;
+  }
+  .search_word button {
+    width: 64px;
+  }
+  .common_select .select {
+    width: 141px;
+    display: inline-block;
+  }
+}
+@media all and (min-width: 1125px) and (max-width: 1619px) {
+  .inp_date {
+    width: 100px;
+  }
+  .search_word .input_search {
+    width: 200px;
+  }
+  .search_word button {
+    width: 64px;
+  }
+  .common_select .select {
+    width: 141px;
+    display: inline-block;
+  }
+}
+@media all and (min-width: 688px) and (max-width: 1124px) {
+  .inp_date {
+    width: 100% !important;
+  }
+}
+@media all and (max-width: 1124px) {
+  .inp_date {
+    width: 100px;
+  }
+  .project_list_search_box {
+    width: 100%;
+    display: inline-block;
+    z-index: 1;
+  }
+  .common_select {
+    width: 30%;
+    float: left;
+  }
+  .common_select .select {
+    width: 100%;
+    display: inline-block;
+  }
+  .search_date {
+    width: 68%;
+    margin-left: 2%;
+    float: left;
+  }
+  .search_date p {
+    padding-right: 13px;
+    display: inline-block;
+  }
+  .search_word {
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  .search_word p {
+    padding-right: 13px;
+  }
+  .search_word .input_search {
+    width: 200px;
+  }
+  .search_word button {
+    width: 64px;
+  }
+}
+@media all and (max-width: 687px) {
+  .inp_date {
+    width: 100%;
+  }
+  .common_select {
+    width: 100%;
+    display: inline-block !important;
+  }
+  .common_select p {
+    width: 100%;
+  }
+  .search_date {
+    width: 100%;
+    margin-left: 0 !important;
+    display: inline-block !important;
+  }
+  .search_date p {
+    width: 100%;
+    display: inline-block;
+  }
+  .search_word {
+    flex-direction: column;
+  }
+  .search_word p {
+    width: 100%;
+    display: block;
+    padding-right: 0;
+    margin-right: 0 !important;
+    margin-bottom: -5px;
+    font-size: var(--fs-14);
+  }
+  .search_word .input_search {
+    width: 100%;
+    display: block;
+  }
+  .search_word button {
+    width: 100%;
+    display: block;
+  }
+}
+.mg_t10 {
+  margin-top: 10px;
+}
+
+@media all and (min-width: 687px) {
+  .project_list_search_box .pc_none {
+    display: none !important;
+  }
+}
+@media all and (max-width: 687px) {
+  .project_list_search_box .mo_none {
+    display: none !important;
+  }
+}
+@media all and (max-width: 410px) {
+  .mo_none {
+    display: none !important;
+  }
+}
+.table_chip_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.table_chip_wrap > span {
+  width: 95px;
+}
+
+@media screen and (max-width: 743px) {
+  .project_list_search_box p,
+  .project_list_search_box input,
+  .project_list_search_box button {
+    font-size: var(--fs-14);
+  }
+  .page_wrap table tr td:nth-of-type(1) {
+    display: none;
+  }
+  .page_wrap table tr {
+    position: relative;
+    padding: 50px 0 10px 0;
+  }
+  .page_wrap table tr td a {
+    display: inline;
+  }
+  .page_wrap table tr td {
+    color: var(--gray-500);
+    font-size: var(--fs-14);
+  }
+  .page_wrap table tr td:nth-of-type(2) {
+    color: var(--gray-700) !important;
+    font-weight: 500;
+    font-size: var(--fs-15);
+    padding-bottom: 5px;
+    line-height: 130%;
+  }
+  .page_wrap table tr td:nth-of-type(2)::before {
+    content: "사업명 : ";
+  }
+  .page_wrap table tr td:nth-of-type(3)::before {
+    content: "공고명 : ";
+  }
+  .page_wrap table tr td:nth-of-type(4)::before {
+    content: "접수시작일 : ";
+  }
+  .page_wrap table tr td:nth-of-type(5)::before {
+    content: "접수마감일 : ";
+  }
+  .table_chip_wrap {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 50%;
+    justify-content: left;
+  }
+  .table_chip_wrap > span {
+    width: 85px;
+  }
+}/*# sourceMappingURL=SmRndList.module.css.map */

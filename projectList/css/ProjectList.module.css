@@ -1,0 +1,25 @@
+.project_list_search_box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2.4rem;
+}
+.project_list_search_box > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.6rem;
+}
+.project_list_search_box > div p {
+  font-weight: 500;
+  margin-right: 0.6rem;
+}
+.project_list_search_box > div.search_date .inp_date {
+  width: 200px;
+}
+.project_list_search_box > div.search_word .input_search {
+  width: 500px;
+}
+.project_list_search_box > div.search_word button {
+  width: 64px;
+}/*# sourceMappingURL=ProjectList.module.css.map */
