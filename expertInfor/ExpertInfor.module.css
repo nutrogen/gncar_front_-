@@ -1,0 +1,94 @@
+.page_wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* gap: 30px; */
+}
+.ExpertInfor_search_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+.search_item_wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.search_item_text {
+  color: var(--gray-700);
+  font-size: var(--fs-16);
+  font-weight: 500;
+}
+.search_item_gap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.search_item_btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.search_btn {
+  width: 64px;
+}
+.content_wrap {
+  display: flex;
+  flex-direction: column;
+}
+.excel_btn_upload {
+  width: 142px !important;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--fs-16);
+  font-weight: 500;
+}
+.excel_btn {
+  width: 155px !important;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--fs-16);
+  font-weight: 500;
+}
+.print_btn {
+  width: 114px !important;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--fs-16);
+  font-weight: 500;
+}
+.create_btn {
+  width: 104px !important;
+}
+.table > table {
+  table-layout: fixed;
+}
+.table_cnstn {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.table_chip_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.table_chip_wrap > span {
+  width: 95px;
+}
+.btn_wrap {
+  width: 303px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.btn {
+  width: 170px;
+}

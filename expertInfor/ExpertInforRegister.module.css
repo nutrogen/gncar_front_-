@@ -1,0 +1,140 @@
+.page_wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* gap: 30px; */
+}
+.content_wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content_inner_wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.form_input_item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* gap: 12px; */
+}
+.form_border_item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.form_input_text {
+  color: var(--gray-700);
+  font-size: var(--fs-18);
+  font-weight: 500;
+  margin: 15px 0 6px 0;
+}
+.form_file_item .form_input_text:nth-of-type(1) {
+  margin-top: 0;
+}
+.input_right_wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.addr_search_btn {
+  width: 92px;
+}
+.setting_select_wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.setting_select {
+  flex-grow: 1;
+}
+.setting_register_btn {
+  width: 76px;
+}
+.setting_chip_wrap {
+  width: 100%;
+  border-radius: var(--br-3);
+  border: 1px solid var(--gray-300);
+  padding: 18px 24px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  gap: 18px;
+}
+.setting_chip_inner_wrap {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 6px;
+}
+.reset_btn {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+}
+.reset_btn_text {
+  color: var(--gray-700);
+  font-size: var(--fs-16);
+  font-weight: 500;
+}
+.btn_wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 30px 0;
+}
+.btn {
+  width: 170px;
+}
+
+.table_chip_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.table_chip_wrap > span {
+  width: 95px;
+}
+.setting_chip_wrap {
+  width: 100%;
+  border-radius: var(--br-3);
+  border: 1px solid var(--gray-300);
+  padding: 18px 24px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  gap: 18px;
+  margin-top: 12px;
+}
+.form_file_item {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid var(--gray-300);
+  padding: 18px 24px;
+  box-sizing: border-box;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  /* gap: 12px; */
+}
+.alert_dialog_btn {
+  width: 64px;
+}
+.input_name {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.essential_des {
+  width: 100%;
+  margin: 0 auto;
+}
